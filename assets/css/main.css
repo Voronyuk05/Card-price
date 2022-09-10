@@ -1,37 +1,99 @@
-body > .container {
-    width: 600px;
-    height: 600px;
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
 }
 
-.container > .box {
-    width: 100px;
-    height: 100px;
-    animation: animate 4s infinite;
+main .infection {
+    width: 1920px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
-@keyframes animate {
-    0% {
-      transform: translateY(0px);
-      background-color: red;
-    }
-  
-    25% {
-        transform: translateY(500px);
-        background-color: blue;
-    }
 
-    50% {
-        transform: translate(500px,500px);
-        background-color: green;
-    }
-  
-    75% {
-      transform: translate(500px,0px);
-      background-color: yellow;
-    }
+.infection .container {
+    width: 1006px;
+    height: 121px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    100% {
-        transform: translateY(0px);
-        background-color: red;
-      }
+.infection .container > .symptom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+}
 
-  }
+.infection .container > .symptom-container .wrapper-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 88px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.infection .container > .symptom-container .wrapper-text {
+    width: 250px;
+    height: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.infection .container > .symptom-container h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#79C0AA;
+    color: white;
+    border-radius: 50px;
+    width: 33px;
+    height: 33px;
+    font-size: 22px;
+}
+
+.infection .container > .symptom-container h6 span {
+    font-size: 15px;
+    display: flex;
+    align-items: flex-end;
+    height: 25px;
+}
+
+.infection .container > .symptom-container .first-number {
+    position: absolute;
+    left: 545px;
+    top: 50px;
+}
+
+.infection .container > .symptom-container .second-number {
+    position: absolute;
+    left: 855px;
+    top: 45px;
+}
+
+.infection .container > .symptom-container .third-number {
+    position: absolute;
+    left: 1170px;
+    top: 45px;
+}
+
+.infection .container > .symptom-container .fourth-number {
+    position: absolute;
+    left: 1480px;
+    top: 45px;
+}
+
+
