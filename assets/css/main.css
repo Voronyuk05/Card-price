@@ -86,6 +86,13 @@ button {
     background: var(--static-color);
     border-radius: 5px;
     color: #FFFFFF;
+    border: none;
+}
+
+button:hover {
+    color: var(--hover-color);
+    box-shadow: 0px 0px 25px 4px rgba(15, 17, 56, 0.1);
+    transition: 1s;
 }
 
 header {
@@ -123,7 +130,6 @@ header  .hero {
     height: 348px;
 }
 
-
 .hero > .flex-container .hero-text-container .wrapper-main-hero-text h1,
 .hero > .flex-container .hero-text-container .wrapper-detalis-hero-text p {
     width: 460px;
@@ -138,13 +144,29 @@ header  .hero {
 .hero > .flex-container .hero-text-container  .wrapper-search-hero-text input {
     width: 447px;
     height: 69.92px;
-
     background: #FFFFFF;
     border: 1px solid rgba(209, 209, 209, 0.1);
     box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
     border-radius: 5px;
 }
 
+.hero > .flex-container .hero-text-container  .wrapper-search-hero-text .wrapper-button {
+    height: 49px;
+    width: 211px;
+    position: absolute;
+    right: 925px;
+    top: 412px;
+}
+
+.hero > .flex-container .hero-text-container  .wrapper-search-hero-text .wrapper-button .btn {
+    height: 49px;
+    width: 211px;
+    color: #FFFFFF;
+}
+
+.hero > .flex-container .hero-text-container  .wrapper-search-hero-text .wrapper-button .btn h4 {
+    color: #FFFFFF;
+}
 
 .hero > .flex-container .hero-text-container .wrapper-heading-hero-text h5{
     width: 345px;
@@ -231,6 +253,13 @@ header  .hero {
         margin-top: 30px;
     }
 
+    .hero > .flex-container .hero-text-container  .wrapper-search-hero-text .wrapper-button {
+        width: 0px;
+        height: 45px;
+        overflow: hidden;
+    }
+
+
     .hero > .flex-container .hero-text-container .wrapper-heading-hero-text  h5{
         width: 320px;
         height: 77px;
@@ -263,7 +292,6 @@ header  .hero {
         width: 250px;
         height: 258px;
     }
-
     
     h1 {
         line-height: 30px;
